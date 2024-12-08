@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-meta">
+            {{ with .Date }}<time>{{ .Format "2006-01-02" }}</time>{{ end }}
+        </div>
+    </header>
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    {{ with .Params.tags }}
+    <footer class="post-footer">
+        <div class="post-tags">
+            {{ range . }}
+            <a href="/tags/{{ . }}">#{{ . }}</a>
+            {{ end }}
+        </div>
+    </footer>
+    {{ end }}
+</article>
+{{ end }}

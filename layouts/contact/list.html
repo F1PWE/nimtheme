@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    <div class="terminal-footer">
+        <span class="blink">_</span>
+    </div>
+</article>
+
+<style>
+    .terminal-footer {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #1b171e;
+    }
+    
+    .blink {
+        animation: cursor-blink 1s infinite;
+    }
+    
+    @keyframes cursor-blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+</style>
+{{ end }} 

@@ -1,0 +1,16 @@
+{{ $current := . }}
+<div class="site-header">
+    <pre class="ascii-logo">          _         
+   ____  (_)___ ___ 
+  / __ \/ / __ `__ \
+ / / / / / / / / / /
+/_/ /_/_/_/ /_/ /_/ 
+                    </pre>
+</div>
+<nav>
+    {{ range site.Menus.main }}
+    <a href="{{ .URL }}" {{ if eq $current.RelPermalink .URL }}aria-current="page"{{ end }}>
+        {{ .Name }}
+    </a>
+    {{ end }}
+</nav>
