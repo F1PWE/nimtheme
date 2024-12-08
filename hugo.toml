@@ -23,9 +23,4 @@ theme = 'nim'
   [[menu.main]]
   name = 'links'
   url = '/links/'
-  weight = 40
-
-  [[menu.main]]
-  name = 'tags'
-  url = '/tags/'
-  weight = 50 
+  weight = 40 

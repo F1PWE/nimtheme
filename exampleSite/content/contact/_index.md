@@ -2,7 +2,6 @@
 title: "contact"
 ---
 
-email: [nim@nimmerland.xyz](mailto:nim@nimmerland.xyz)  
 pgp: [public key](/pgp.asc)
 
 please use pgp encryption when possible.

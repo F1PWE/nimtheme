@@ -1,1 +1,17 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="footer-content">
+    <div class="quote">
+        {{ $quotes := slice 
+            "privacy is not secrecy; it is autonomy"
+            "simplicity is the ultimate sophistication"
+            "less software, more meaning"
+            "digital freedom matters"
+            "code less, think more"
+            "in unix we trust"
+            "keep it simple, keep it safe"
+            "privacy by design"
+            "free as in freedom"
+        }}
+        {{ $randomQuote := index $quotes (mod now.UnixNano (len $quotes)) }}
+        <span class="quote-text">{{ $randomQuote }}</span>
+    </div>
+</div>

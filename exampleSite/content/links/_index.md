@@ -1,6 +1,7 @@
 ---
 title: "links"
 type: "links"
+tags: ["links"]
 ---
 
 ## software_
