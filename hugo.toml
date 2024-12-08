@@ -1,0 +1,31 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-US'
+title = 'nim'
+
+theme = 'nim'
+
+[menu]
+  [[menu.main]]
+  name = 'home'
+  url = '/'
+  weight = 10
+
+  [[menu.main]]
+  name = 'posts'
+  url = '/posts/'
+  weight = 20
+
+  [[menu.main]]
+  name = 'contact'
+  url = '/contact/'
+  weight = 30
+
+  [[menu.main]]
+  name = 'links'
+  url = '/links/'
+  weight = 40
+
+  [[menu.main]]
+  name = 'tags'
+  url = '/tags/'
+  weight = 50 
