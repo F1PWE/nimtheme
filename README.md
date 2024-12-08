@@ -9,13 +9,15 @@ A minimal, privacy-focused Hugo theme with subtle neon effects.
 - Monospace typography
 - Responsive design
 - Clean, minimal layout
+- Terminal-style elements
+- Subtle glitch effects
 
 ## Installation
 
 ### Git Submodule (recommended)
 ```bash
 cd your-hugo-site
-git submodule add https://github.com/yourusername/hugo-theme-nim.git themes/nim
+git submodule add https://github.com/F1PWE/nimtheme.git themes/nim
 ```
 
 Then, add to your `hugo.toml`:
@@ -24,9 +26,21 @@ theme = "nim"
 ```
 
 ### Manual Installation
-1. Download this theme
+1. Download this theme from https://github.com/F1PWE/nimtheme.git
 2. Put it in the `themes/nim` directory of your site
 3. Add `theme = "nim"` to your `hugo.toml`
+
+## Required Structure
+Create these directories and files in your site:
+```
+content/
+├── _index.md          # Home page
+├── posts/             # Blog posts
+├── contact/           # Contact info
+│   └── _index.md     # Contact page
+└── links/            # External links
+    └── _index.md     # Links page
+```
 
 ## Configuration
 Example configuration in your site's `hugo.toml`:
@@ -64,14 +78,18 @@ pageRef = '/tags'
 weight = 50
 ```
 
-## Content Structure
-```
-content/
-├── _index.md          # Home page
-├── posts/             # Blog posts
-├── contact/           # Contact page
-└── links/             # Links page
-```
+## Example Content
+Check the `exampleSite` directory in this theme for reference content and structure:
+- Home page introduction
+- Contact page setup
+- Links page format
+- Example posts
+
+## Customization
+You can override any part of the theme by creating the same file structure in your site's directory. For example:
+- Override CSS: Create `assets/css/main.css` in your site
+- Override layouts: Create matching files in your site's `layouts` directory
+- Override partials: Create matching files in your site's `layouts/partials` directory
 
 ## License
-MIT License
+GNU General Public License v2.0

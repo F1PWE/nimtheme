@@ -1,13 +1,13 @@
 name = "nim"
-license = "MIT"
-licenselink = "https://github.com/yourusername/hugo-theme-nim/LICENSE"
+license = "GPL-2.0"
+licenselink = "https://github.com/F1PWE/nimtheme/LICENSE"
 description = "A minimal, privacy-focused Hugo theme with subtle neon effects"
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = "https://github.com/F1PWE/nimtheme"
 
 # If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = "https://github.com/F1PWE/nimtheme/tree/main/exampleSite"
 
 # Taxonomy terms
 tags = ["minimal", "blog", "personal", "privacy", "dark", "monospace", "cyberpunk"]
@@ -21,8 +21,8 @@ authors = [
 
 # If the theme has a single author
 [author]
-  name = 'nim'
-  homepage = 'https://nimmerland.xyz'
+  name = "nim"
+  homepage = "https://nimmerland.xyz"
 
 # If porting an existing theme
 [original]
