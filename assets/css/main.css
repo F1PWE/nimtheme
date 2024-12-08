@@ -456,3 +456,34 @@ blockquote {
     content: " ~";
     color: #61b5a2;
 }
+
+/* Post List */
+.post-list {
+    margin: 3rem 0;
+}
+
+.post-list article {
+    margin: 0;
+    padding: 2rem 0;
+    border-bottom: 1px solid #1b171e;
+}
+
+.post-list article:last-child {
+    border-bottom: none;
+}
+
+.post-list h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+.post-list time {
+    display: block;
+    margin-bottom: 1rem;
+    color: #8d8295;
+}
+
+.post-list p {
+    margin: 1rem 0 0 0;
+    color: #b6afbb;
+    line-height: 1.6;
+}
