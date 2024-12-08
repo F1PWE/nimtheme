@@ -92,21 +92,11 @@ nav a[aria-current="page"] {
 /* Content */
 article {
     margin: 3rem 0;
-    position: relative;
-}
-
-article::before {
-    content: ">";
-    position: absolute;
-    left: -1.5rem;
-    color: #61b5a2;
-    opacity: 0.5;
 }
 
 time {
     color: #8d8295;
     font-size: 1em;
-    font-family: "vt323", "courier new", monospace;
 }
 
 /* Code */
