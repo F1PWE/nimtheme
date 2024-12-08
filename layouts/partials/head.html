@@ -1,5 +1,11 @@
+{{ $title := print .Site.Title " | " .Title }}
+{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<title>{{ $title }}</title>
 {{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="generator" content="Hugo {{ hugo.Version }}">
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
+<meta name="author" content="{{ .Site.Author.name }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
