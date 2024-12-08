@@ -15,7 +15,7 @@ A minimal, privacy-focused Hugo theme with subtle neon effects.
 ### Git Submodule (recommended)
 ```bash
 cd your-hugo-site
-git submodule add https://github.com/yourusername/hugo-theme-nim.git themes/nim
+git submodule add https://github.com/F1PWE/nimtheme.git themes/nim
 ```
 
 Then, add to your `hugo.toml`:
